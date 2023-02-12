@@ -1,0 +1,449 @@
+@font-face {
+    font-family: Cinema;
+    src: url(Font/Cinema\ Font\ \(\ www.rezagraphic.ir\ \).ttf);
+}
+
+*{
+    font-family: Cinema , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin:0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: cover;
+}
+
+.Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.Success-Login{
+    width: 200px;
+    height:auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 42%;
+    top: 5%;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all ease 300ms;
+    text-align: right;
+    line-height: 1;
+}
+
+.Success-Login:hover{
+    width: 230px;
+}
+
+.Success-Login div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.Success-Login div h5{
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease 300ms;
+}
+
+.Success-Login div h5:hover{
+    text-shadow: 0px 0px 10px #ff5e00;
+}
+
+
+.Success-Login div span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(./Image/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Question-Icon{
+    font-size: 50px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    border: 1px solid cyan;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Box-Form{
+    width: 70%;
+    height: 550px;
+    float: right;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #f8c230;
+    z-index: 999;
+}
+
+.Box-image{
+    width: 50%;
+    height: 100%;
+    background-image: url(./Image/minimal-user-symbol-yellow-background-3d-renderinghbib_750318-291.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: all ease 300ms;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.Box-Form-D{
+    width: 100%;
+    height: 100%;
+    background-color: #f8c230;
+}
+
+
+
+.Box-Form::before{
+	content: '';
+	z-index: -1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	transform-origin: bottom right;
+	background:orangered;
+	animation: AnimateBoxForm 6s linear infinite;
+}
+
+.Box-Form::after{
+    content: '';
+	z-index: -1;
+	position: absolute;
+	top: -70%;
+	left: -20%;
+	width: 600px;
+	height: 680px;
+	transform-origin: bottom right;
+	background: orangered;
+	animation: AnimateBoxForm 6s linear infinite;
+	animation-delay: -3s;
+}
+
+@keyframes AnimateBoxForm{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+.H1{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 7px #ff5e00;
+}
+
+.Form-SignUp{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+
+
+.Form-SignUp.Active{
+    right: 50%;
+}
+
+.Form-SignUp div{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.Form-Login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    z-index:999;
+}
+
+.Form-Login div{
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.Inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Inputs div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Inputs-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.Input{
+    width: 70%;
+    text-align: right;
+    padding: 10px;
+    margin:10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: inline;
+}
+
+.Inputs-item span{
+    font-size: 20px;
+    color: white;
+    background-color: #f8c230;
+    padding: 10px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.EmailInput{
+    position: relative;
+}
+
+.Box-V-EAndp{
+    width: 70% !important;
+    position: absolute;
+    left: 9%;
+    top: 32.5%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Box-V-EAndp label{
+    padding: 10px;
+}
+
+.Box-V-EAndp p{
+    margin: 10px;
+}
+
+.IconTypeOfValidate{
+    position: absolute;
+    left: 11%;
+    top: 25%;
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.Input:focus{
+    animation:Inputs 400ms linear;
+}
+
+/* IconPassword Style */
+.IconPassword3{
+    position: relative;
+}
+
+.IconPassword3{
+    position: absolute;
+    left: 13%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.IconPassword2{
+    position: relative;
+}
+
+.IconPassword2{
+    position: absolute;
+    left: 13%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.IconPassword1{
+    position: relative;
+}
+
+.IconPassword1{
+    position: absolute;
+    left: 13%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+@keyframes Inputs {
+    0%{outline: 0px;}
+    25%{outline: 2px solid yellow;}
+    50%{outline: 5px solid rgb(255, 255, 147);}
+    75%{outline: 7px solid rgb(255, 255, 205);}
+    100%{outline:0px solid yellow;}
+}
+
+.LinkForm a{
+    text-decoration: none;
+    text-align: right;
+    color: gray;
+    font-size: 17px;
+}
+
+/* Start Style For Buttons */
+
+.Buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.SubmitButton{
+    width: 40%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background: linear-gradient(to left,yellow , rgb(255, 153, 0));
+    font-size: 17px;
+    transition: all ease 700ms;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.SubmitButton:hover{
+    width: 44%;
+    letter-spacing: 3px;
+    border-radius: 30px 30px 5px 5px;
+}
+
+
+.GetDataUsertButton{
+    width: 40%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background: linear-gradient(to right,yellow , rgb(255, 153, 0));
+    font-size: 17px;
+    transition: all ease 700ms;
+    display: flex;
+    justify-content: center;
+}
+
+.GetDataUsertButton:hover{
+    width: 50%;
+    letter-spacing: 1px;
+    border-radius: 30px 30px 5px 5px;
+}
+
+/* End Style For Buttons */
+
+.CursorNotAllowed{
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+h5{
+    font-size: 17px;
+}
+
+.Box-R{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Start Style For File Input */
+
+
+.FileInput{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    padding: 0px 30px 0px 30px;
+}
+
+
+
+/* End Style For File Input */
+
+/* Start Style For Box Get Data From LocalStorage */
+.BoxShowResultForL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9500;
+    z-index: 999;
+}
+
+.BoxShowResultForL form ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+    font-size: 20px;
+    color: white;
+    list-style-type: square;
+}
+
+.Times{
+    float: right;
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+/* End Style For Box Get Data From LocalStorage */
